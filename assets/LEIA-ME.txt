@@ -1,0 +1,21 @@
+FOTO DO PROFESSOR
+=================
+
+Coloque a foto profissional do Tiago Cavalcante nesta pasta com o nome:
+
+    professor.jpg
+
+Recomendações:
+- Retrato vertical (proporção ~13:16), fundo escuro combina melhor com o layout.
+- Resolução sugerida: ~1040 x 1600 px.
+- Otimize a imagem (JPG de qualidade ~80%) para manter a página rápida.
+
+A moldura, a sombra suave, o glow roxo/ciano e a borda translúcida
+são aplicados automaticamente via CSS — não precisa editar a foto para isso.
+
+Enquanto o arquivo não existir, a página mostra um placeholder indicando
+onde a imagem deve ficar.
+
+(Opcional) Imagem de compartilhamento social:
+- Crie assets/og-cover.jpg (1200 x 630 px) para o preview no WhatsApp,
+  Instagram, Facebook e Twitter/X.
