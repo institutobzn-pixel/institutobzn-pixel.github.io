@@ -212,20 +212,14 @@ ul { list-style: none; }
   filter: drop-shadow(0 2px 22px rgba(139, 92, 246, .5));
   animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .45s both;
 }
-.hero-presenter {
-  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; margin: 0 0 6px;
-  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .68s both;
+.hero-course-with {
+  display: block; margin-top: 10px;
+  font-weight: 500; font-size: 1.15rem; color: var(--text-muted);
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .7s both;
 }
-.hp-with { font-size: 1.05rem; color: var(--text-muted); font-weight: 500; }
-.hp-name {
-  position: relative;
-  font-family: var(--font-display); font-weight: 700; color: var(--text);
-  font-size: clamp(1.4rem, 2.9vw, 1.95rem); letter-spacing: -.01em;
-  padding-bottom: 6px;
-}
-.hp-name::after {
-  content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%;
-  background: var(--grad); border-radius: 3px; box-shadow: var(--glow-purple);
+.hero-course-with strong {
+  font-family: var(--font-display); font-weight: 700; color: #ffffff;
+  font-size: 1.25rem;
 }
 @keyframes courseIn {
   from { opacity: 0; transform: translateY(12px) scale(.98); }
