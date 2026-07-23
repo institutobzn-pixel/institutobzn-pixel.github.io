@@ -1,6 +1,6 @@
 # Método Renda Digital — Página de Vendas
 
-Página de vendas premium (dark, estética tech/IA) para o curso do professor **Tiago Cavalcante**, construída a partir do briefing em PDF.
+Página de vendas premium (dark, estética tech/IA) para o curso do professor **Tiago Cavalcanti**, construída a partir do briefing em PDF.
 
 HTML + CSS + JavaScript puro, **sem frameworks nem bibliotecas pesadas**. Pronta para publicar.
 
