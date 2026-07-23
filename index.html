@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/styles.css?v=17" />
+  <link rel="stylesheet" href="css/styles.css?v=18" />
 
   <!-- Schema.org: Evento -->
   <script type="application/ld+json">
@@ -100,17 +100,34 @@
     <!-- ============================= HERO ============================= -->
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
-        <div class="hero-copy reveal">
+        <div class="hero-lead reveal">
           <span class="eyebrow"><span class="dot" aria-hidden="true"></span> 10 e 11 de agosto de 2026 · Porto Alegre/RS</span>
           <h1 id="hero-title">
             Faça a Internet trabalhar a seu favor!
           </h1>
-
           <p class="hero-course-line">
             <span class="hcl-course">Curso Como Gerar Renda pela Internet</span>
             <span class="hcl-with">com <strong>Dr. Tiago Cavalcanti</strong></span>
           </p>
           <p class="hero-creds-line">PhD &nbsp;·&nbsp; TEDx Speaker &nbsp;·&nbsp; Palestrante Internacional &nbsp;·&nbsp; Referência em Neurociência dos Negócios</p>
+        </div>
+
+        <div class="hero-media reveal">
+          <div class="photo-frame">
+            <!-- FOTO DO PROFESSOR — assets/professor.jpg.jpg -->
+            <img
+              src="assets/professor.jpg.jpg"
+              alt="Tiago Cavalcanti, professor do curso Como Gerar Renda pela Internet"
+              class="professor-photo"
+              width="520" height="640"
+              loading="eager"
+              onerror="this.classList.add('is-missing')"
+            />
+            <div class="photo-glow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="hero-actions reveal">
           <div class="hero-days">
             <div class="day-badge">
               <span class="day-tag day-tag--presencial">Dia 1 · Presencial</span>
@@ -126,21 +143,6 @@
           <div class="hero-cta">
             <a href="#oferta" class="btn btn-primary btn-lg">Quero garantir minha vaga</a>
             <a href="#conteudo-curso" class="btn btn-ghost btn-lg">Ver o programa</a>
-          </div>
-        </div>
-
-        <div class="hero-media reveal">
-          <div class="photo-frame">
-            <!-- FOTO DO PROFESSOR — assets/professor.jpg.jpg -->
-            <img
-              src="assets/professor.jpg.jpg"
-              alt="Tiago Cavalcanti, professor do curso Como Gerar Renda pela Internet"
-              class="professor-photo"
-              width="520" height="640"
-              loading="eager"
-              onerror="this.classList.add('is-missing')"
-            />
-            <div class="photo-glow" aria-hidden="true"></div>
           </div>
         </div>
       </div>
@@ -658,6 +660,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=17" defer></script>
+  <script src="js/main.js?v=18" defer></script>
 </body>
 </html>
