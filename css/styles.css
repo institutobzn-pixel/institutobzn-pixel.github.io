@@ -196,13 +196,29 @@ ul { list-style: none; }
 .hero-copy h1 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(2.3rem, 5.2vw, 3.8rem);
-  line-height: 1.06;
+  font-size: clamp(2rem, 4.4vw, 3.2rem);
+  line-height: 1.08;
   letter-spacing: -.02em;
-  margin: 20px 0 20px;
+  margin: 20px 0 18px;
 }
-.hero-course { font-family: var(--font-display); font-weight: 600; font-size: clamp(1.1rem, 2.2vw, 1.42rem); color: var(--text); margin: 16px 0 14px; line-height: 1.35; }
-.hero-course strong { font-weight: 700; }
+.hero-course { margin: 18px 0 14px; }
+.hero-course-chip {
+  display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px;
+  font-family: var(--font-display); font-weight: 600;
+  font-size: clamp(.98rem, 1.8vw, 1.18rem); color: var(--text);
+  padding: 12px 20px; border-radius: 14px;
+  background: var(--grad-soft);
+  border: 1px solid var(--glass-brd-strong);
+  box-shadow: 0 0 34px -12px rgba(139, 92, 246, .55);
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .55s both;
+}
+.hero-course-chip strong { font-weight: 700; }
+.hero-course-chip .hc-with { color: var(--text-muted); font-weight: 500; }
+.hero-course-chip .hc-with::before { content: "· "; color: var(--text-dim); }
+@keyframes courseIn {
+  from { opacity: 0; transform: translateY(12px) scale(.97); }
+  to   { opacity: 1; transform: none; }
+}
 .hero-sub { font-size: clamp(1.05rem, 2vw, 1.22rem); color: var(--text-muted); max-width: 46ch; }
 
 /* Dois dias do curso (presencial x online) */
