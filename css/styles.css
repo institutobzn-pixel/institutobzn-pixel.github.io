@@ -219,7 +219,7 @@ ul { list-style: none; }
 }
 .hero-course-with strong {
   font-family: var(--font-display); font-weight: 700; color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 1.3rem; letter-spacing: -.005em;
 }
 @keyframes courseIn {
   from { opacity: 0; transform: translateY(12px) scale(.98); }
@@ -315,9 +315,9 @@ ul { list-style: none; }
 .pill-row li { padding: 8px 18px; border-radius: 999px; background: var(--glass-bg); border: 1px solid var(--glass-brd); color: var(--text-muted); font-size: .9rem; font-weight: 500; }
 
 /* ----------------------------- SECTIONS ----------------------------- */
-.section { padding: 100px 0; position: relative; }
+.section { padding: 112px 0; position: relative; }
 .section-alt { background: linear-gradient(180deg, rgba(255,255,255,.02), transparent 40%); }
-.section-head { max-width: 720px; margin: 0 auto 56px; text-align: center; }
+.section-head { max-width: 720px; margin: 0 auto 64px; text-align: center; }
 .kicker { display: inline-block; font-size: .82rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--cyan); margin-bottom: 14px; }
 .section-head h2, .section h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.9rem, 4vw, 2.9rem); line-height: 1.12; letter-spacing: -.02em; }
 .section-lead { margin-top: 18px; color: var(--text-muted); font-size: 1.1rem; }
@@ -536,4 +536,50 @@ ul { list-style: none; }
   .event-bar { grid-template-columns: 1fr; text-align: left; }
   .event-band { margin-top: 0; }
   .hero-days { grid-template-columns: 1fr; }
+}
+
+/* =====================================================================
+   REFINOS — autoridade do palestrante, seção "Por que R$97" e elegância
+   ===================================================================== */
+
+/* Credenciais do palestrante (hero) */
+.hero-creds {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 24px;
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .82s both;
+}
+.hero-creds li {
+  font-size: .74rem; font-weight: 600; letter-spacing: .02em; color: var(--text-muted);
+  padding: 6px 13px; border-radius: 999px;
+  background: var(--glass-bg); border: 1px solid var(--glass-brd);
+  transition: color .25s ease, border-color .25s ease;
+}
+.hero-creds li:first-child { color: var(--cyan); border-color: rgba(34, 211, 238, .4); }
+.hero-creds li:hover { color: var(--text); border-color: var(--glass-brd-strong); }
+
+/* Seção "Por que R$ 97?" */
+.whyprice {
+  text-align: center; padding: 52px 48px; border-radius: var(--radius-lg);
+  border-color: var(--glass-brd-strong);
+  box-shadow: var(--shadow), 0 0 80px -40px rgba(139, 92, 246, .5);
+}
+.whyprice h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem) !important; margin-bottom: 18px; }
+.whyprice > p { color: var(--text-muted); max-width: 62ch; margin: 0 auto 16px; font-size: 1.06rem; }
+.whyprice > p strong { color: var(--text); }
+.whyprice-points {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  margin-top: 34px; text-align: left;
+}
+.whyprice-points li { padding: 22px; border-radius: 16px; background: var(--glass-bg); border: 1px solid var(--glass-brd); }
+.whyprice-points strong { display: block; font-family: var(--font-display); margin-bottom: 6px; color: var(--text); }
+.whyprice-points span { color: var(--text-muted); font-size: .92rem; }
+
+/* Refinos de elegância + tipografia */
+.hero-course-name { filter: drop-shadow(0 2px 18px rgba(139, 92, 246, .38)); }
+h1, h2, h3 { text-wrap: balance; }
+.hero-sub, .section-lead, .whyprice > p, .card p { text-wrap: pretty; }
+.eyebrow, .kicker, .day-tag, .night-tag, .hero-creds li { -webkit-font-smoothing: antialiased; }
+
+@media (max-width: 640px) {
+  .whyprice { padding: 36px 22px; }
+  .whyprice-points { grid-template-columns: 1fr; }
 }
