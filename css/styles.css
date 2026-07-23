@@ -201,21 +201,31 @@ ul { list-style: none; }
   letter-spacing: -.02em;
   margin: 20px 0 18px;
 }
-.hero-course { margin: 16px 0; }
+.hero-course { margin: 16px 0 10px; }
 .hero-course-name {
   display: block;
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(1.5rem, 3.1vw, 2.15rem); line-height: 1.14;
+  font-size: clamp(1.6rem, 3.3vw, 2.35rem); line-height: 1.12;
   letter-spacing: -.01em;
   background: var(--grad);
   -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 2px 20px rgba(139, 92, 246, .45));
-  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .5s both;
+  filter: drop-shadow(0 2px 22px rgba(139, 92, 246, .5));
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .45s both;
 }
-.hero-course-with {
-  display: block; margin-top: 8px;
-  font-weight: 500; font-size: 1.05rem; color: var(--text-muted);
-  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .72s both;
+.hero-presenter {
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 12px; margin: 0 0 6px;
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .68s both;
+}
+.hp-with { font-size: 1.05rem; color: var(--text-muted); font-weight: 500; }
+.hp-name {
+  position: relative;
+  font-family: var(--font-display); font-weight: 700; color: var(--text);
+  font-size: clamp(1.4rem, 2.9vw, 1.95rem); letter-spacing: -.01em;
+  padding-bottom: 6px;
+}
+.hp-name::after {
+  content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%;
+  background: var(--grad); border-radius: 3px; box-shadow: var(--glow-purple);
 }
 @keyframes courseIn {
   from { opacity: 0; transform: translateY(12px) scale(.98); }
