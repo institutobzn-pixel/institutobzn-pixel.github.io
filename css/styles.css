@@ -202,45 +202,29 @@ ul { list-style: none; }
   margin: 20px 0 14px;
   text-shadow: 0 4px 40px rgba(139, 92, 246, .18);
 }
-/* Frase de impacto */
-.hero-punch {
-  font-family: var(--font-display); font-weight: 600;
-  font-size: clamp(1.2rem, 2.7vw, 1.75rem); line-height: 1.22; letter-spacing: -.01em;
-  color: var(--text-muted); margin: 8px 0 28px;
-  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .32s both;
+/* Curso + palestrante — apresentação clean */
+.hero-course-line {
+  margin: 16px 0 12px;
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .4s both;
 }
-.hero-punch .grad-text { font-weight: 700; }
-
-/* Bloco de apresentação: curso + palestrante */
-.hero-presenter-block {
-  position: relative; padding-left: 24px; margin: 0 0 26px;
-  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .5s both;
-}
-.hero-presenter-block::before {
-  content: ""; position: absolute; left: 0; top: 4px; bottom: 4px; width: 4px;
-  border-radius: 4px; background: var(--grad); box-shadow: 0 0 22px -2px rgba(168, 85, 247, .7);
-}
-.hpb-label {
-  display: block; font-size: .72rem; font-weight: 700; letter-spacing: .22em;
-  text-transform: uppercase; color: var(--cyan); margin-bottom: 6px;
-}
-.hpb-course {
+.hcl-course {
   display: block;
   font-family: var(--font-display); font-weight: 700;
-  font-size: clamp(1.55rem, 3.2vw, 2.3rem); line-height: 1.08; letter-spacing: -.015em;
+  font-size: clamp(1.4rem, 3vw, 2.05rem); line-height: 1.16; letter-spacing: -.015em;
   background: var(--grad);
   -webkit-background-clip: text; background-clip: text; color: transparent;
-  filter: drop-shadow(0 2px 20px rgba(139, 92, 246, .42));
 }
-.hpb-with {
-  display: block; margin-top: 14px; font-size: 1.05rem; color: var(--text-muted); font-weight: 500;
+.hcl-with {
+  display: block; margin-top: 12px;
+  font-size: 1.05rem; color: var(--text-muted); font-weight: 500;
 }
-.hpb-with strong {
-  font-family: var(--font-display); font-weight: 700; color: #fff;
-  font-size: clamp(1.35rem, 2.7vw, 1.75rem); letter-spacing: -.01em;
-  background-image: var(--grad);
-  background-size: 100% 3px; background-position: 0 100%; background-repeat: no-repeat;
-  padding-bottom: 5px;
+.hcl-with strong {
+  font-family: var(--font-display); font-weight: 600; color: #fff;
+  font-size: 1.22rem; letter-spacing: -.01em;
+}
+.hero-creds-line {
+  margin: 0 0 4px; font-size: .88rem; color: var(--text-dim); letter-spacing: .01em;
+  animation: courseIn .7s cubic-bezier(.2, .7, .2, 1) .55s both;
 }
 @keyframes courseIn {
   from { opacity: 0; transform: translateY(12px) scale(.98); }
