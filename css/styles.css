@@ -172,6 +172,8 @@ ul { list-style: none; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; }
+.brand-logo { height: 40px; width: auto; display: block; }
+.brand-fallback { display: none; align-items: center; gap: 10px; }
 .brand-mark { width: 20px; height: 20px; border-radius: 7px; background: var(--grad); box-shadow: var(--glow-purple); }
 .main-nav { display: flex; gap: 30px; }
 .main-nav a { color: var(--text-muted); font-size: .95rem; font-weight: 500; transition: color .25s ease; }
@@ -251,6 +253,19 @@ ul { list-style: none; }
 .scroll-hint span::after { content: ""; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 4px; height: 8px; border-radius: 4px; background: var(--cyan); animation: scrolldot 1.8s infinite; }
 @keyframes scrolldot { 0% { opacity: 0; top: 8px; } 40% { opacity: 1; } 80% { opacity: 0; top: 22px; } }
 
+/* ----------------------------- BARRA DE EVENTO ----------------------------- */
+.event-band { padding: 8px 0 4px; margin-top: -20px; position: relative; z-index: 2; }
+.event-bar {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 8px; padding: 20px 24px; border-radius: var(--radius-lg);
+  border-color: var(--glass-brd-strong);
+}
+.event-item { display: flex; align-items: center; gap: 12px; padding: 6px 10px; }
+.event-item + .event-item { border-left: 1px solid var(--glass-brd); }
+.ev-ic { font-size: 1.4rem; flex: none; }
+.event-item strong { display: block; font-family: var(--font-display); font-size: 1rem; line-height: 1.2; }
+.event-item small { color: var(--text-dim); font-size: .82rem; }
+
 /* ----------------------------- MARQUEE / PILLS ----------------------------- */
 .marquee-band { padding: 30px 0; border-block: 1px solid var(--glass-brd); background: linear-gradient(180deg, rgba(255,255,255,.015), transparent); }
 .band-label { text-align: center; color: var(--text-dim); font-size: .9rem; margin-bottom: 16px; }
@@ -323,6 +338,25 @@ ul { list-style: none; }
 .tl-body h3 { font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 6px; }
 .tl-body p { color: var(--text-muted); }
 
+/* ----------------------------- NOITES (PROGRAMA) ----------------------------- */
+.nights { align-items: stretch; }
+.night-card { display: flex; flex-direction: column; }
+.night-tag {
+  display: inline-flex; align-self: flex-start; align-items: center;
+  font-size: .78rem; font-weight: 600; letter-spacing: .03em;
+  padding: 7px 14px; border-radius: 999px; margin-bottom: 16px;
+  border: 1px solid var(--glass-brd-strong);
+}
+.night-tag--live { color: var(--purple-neon); background: rgba(168,85,247,.12); border-color: rgba(168,85,247,.4); }
+.night-tag--online { color: var(--cyan); background: rgba(34,211,238,.10); border-color: rgba(34,211,238,.4); }
+.night-card h3 { font-family: var(--font-display); font-size: 1.35rem; margin-bottom: 10px; line-height: 1.2; }
+.night-card > p { color: var(--text-muted); margin-bottom: 18px; }
+.mini-list { display: grid; gap: 11px; margin-top: auto; }
+.mini-list li { position: relative; padding-left: 26px; color: var(--text-muted); font-size: .96rem; }
+.mini-list li::before { content: "→"; position: absolute; left: 0; color: var(--cyan); font-weight: 700; }
+.prog-outcome { max-width: 760px; margin: 34px auto 0; text-align: center; color: var(--text-muted); font-size: 1.08rem; }
+.prog-outcome strong { color: var(--text); }
+
 /* ----------------------------- PARA QUEM / FIT ----------------------------- */
 .fit-card h3 { display: flex; align-items: center; gap: 12px; font-size: 1.3rem; margin-bottom: 18px; }
 .fit-ic { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; }
@@ -369,7 +403,9 @@ ul { list-style: none; }
 .offer-list li { display: flex; gap: 12px; color: var(--text-muted); }
 .offer-list li span { color: var(--cyan); font-weight: 700; }
 .offer-price { padding: 44px; background: linear-gradient(160deg, rgba(139,92,246,.14), rgba(34,211,238,.06)); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-left: 1px solid var(--glass-brd); }
+.offer-flag { display: inline-block; font-size: .74rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #061018; background: var(--grad); padding: 5px 12px; border-radius: 999px; margin-bottom: 16px; }
 .price-from { color: var(--text-dim); font-size: .95rem; }
+.price-cash strong { color: var(--text); }
 .price-from s { opacity: .7; }
 .price-now { font-family: var(--font-display); font-size: 3rem; font-weight: 700; line-height: 1; margin: 8px 0; }
 .price-now small { font-size: 1rem; color: var(--text-muted); font-weight: 500; }
@@ -430,6 +466,8 @@ ul { list-style: none; }
   .hero-sub { max-width: none; }
   .sol-grid, .prof-grid { grid-template-columns: 1fr; gap: 40px; }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .event-bar { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .event-item + .event-item { border-left: 0; }
   .offer-wrap { grid-template-columns: 1fr; }
   .offer-price { border-left: 0; border-top: 1px solid var(--glass-brd); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -446,4 +484,6 @@ ul { list-style: none; }
   .footer-grid { grid-template-columns: 1fr; }
   .trust-row { gap: 18px; }
   .prof-stats { gap: 22px; }
+  .event-bar { grid-template-columns: 1fr; text-align: left; }
+  .event-band { margin-top: 0; }
 }

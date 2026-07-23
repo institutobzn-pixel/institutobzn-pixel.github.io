@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ============================= SEO ============================= -->
-  <title>Método Renda Digital — Tiago Cavalcante | Do zero à sua primeira renda online</title>
-  <meta name="description" content="Um método claro e passo a passo para pessoas comuns começarem a gerar renda na internet — mesmo começando do absoluto zero, sem audiência e sem experiência. Com Tiago Cavalcante." />
-  <meta name="author" content="Tiago Cavalcante" />
+  <title>Como Gerar Renda pela Internet — Curso Híbrido | Instituto BZN · 05 e 06 de agosto de 2026</title>
+  <meta name="description" content="Curso híbrido com Tiago Cavalcante: conheça as novas formas reais de trabalhar, vender e criar fontes de renda no mundo digital. Duas noites — 05 (presencial) e 06 (online ao vivo) de agosto de 2026. Prático e sem ilusões." />
+  <meta name="author" content="Instituto BZN · Tiago Cavalcante" />
   <meta name="theme-color" content="#090909" />
   <link rel="canonical" href="https://exemplo.com.br/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_BR" />
-  <meta property="og:title" content="Método Renda Digital — Tiago Cavalcante" />
-  <meta property="og:description" content="Do zero à sua primeira renda online. Um método claro, ético e passo a passo para começar na internet — mesmo sem experiência." />
+  <meta property="og:title" content="Como Gerar Renda pela Internet — Curso Híbrido | Instituto BZN" />
+  <meta property="og:description" content="As novas formas de gerar renda no mundo digital, de forma prática e realista. 05 e 06 de agosto de 2026, com Tiago Cavalcante." />
   <meta property="og:image" content="assets/og-cover.jpg" />
   <meta property="og:url" content="https://exemplo.com.br/" />
-  <meta property="og:site_name" content="Método Renda Digital" />
+  <meta property="og:site_name" content="Instituto BZN" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Método Renda Digital — Tiago Cavalcante" />
-  <meta name="twitter:description" content="Do zero à sua primeira renda online. Um método claro, ético e passo a passo." />
+  <meta name="twitter:title" content="Como Gerar Renda pela Internet — Curso Híbrido" />
+  <meta name="twitter:description" content="Conheça os modelos reais de renda digital e descubra qual combina com você. 05 e 06 de agosto de 2026." />
   <meta name="twitter:image" content="assets/og-cover.jpg" />
 
   <!-- Fonts (preconnect para performance) -->
@@ -33,24 +33,32 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 
-  <!-- Schema.org: Curso + Instrutor -->
+  <!-- Schema.org: Evento -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Course",
-    "name": "Método Renda Digital",
-    "description": "Método passo a passo para pessoas comuns começarem a gerar renda na internet, do zero, com ética e clareza.",
-    "provider": {
-      "@type": "Organization",
-      "name": "Método Renda Digital",
-      "sameAs": "https://exemplo.com.br/"
-    },
-    "instructor": {
-      "@type": "Person",
-      "name": "Tiago Cavalcante",
-      "jobTitle": "Especialista em negócios digitais"
-    },
-    "inLanguage": "pt-BR"
+    "@type": "Event",
+    "name": "Como Gerar Renda pela Internet",
+    "description": "Curso híbrido que apresenta as principais formas de gerar renda no mundo digital e ajuda cada participante a identificar o modelo compatível com sua realidade.",
+    "startDate": "2026-08-05T19:00:00-03:00",
+    "endDate": "2026-08-06T22:00:00-03:00",
+    "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": [
+      { "@type": "Place", "name": "Local presencial a confirmar", "address": "A confirmar" },
+      { "@type": "VirtualLocation", "url": "https://exemplo.com.br/" }
+    ],
+    "image": "assets/og-cover.jpg",
+    "inLanguage": "pt-BR",
+    "organizer": { "@type": "Organization", "name": "Instituto BZN", "url": "https://exemplo.com.br/" },
+    "performer": { "@type": "Person", "name": "Tiago Cavalcante" },
+    "offers": {
+      "@type": "Offer",
+      "price": "97.00",
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "url": "https://exemplo.com.br/"
+    }
   }
   </script>
 </head>
@@ -64,17 +72,26 @@
   <!-- ============================= HEADER ============================= -->
   <header class="site-header" id="topo">
     <div class="container header-inner">
-      <a href="#topo" class="brand" aria-label="Método Renda Digital — início">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-name">Renda<span class="grad-text">Digital</span></span>
+      <a href="#topo" class="brand" aria-label="Instituto BZN — início">
+        <!--
+          LOGO DO INSTITUTO BZN
+          Salve a logo em: assets/logo-bzn.png  (fundo transparente, ~horizontal)
+          Enquanto o arquivo não existir, aparece o texto "Instituto BZN".
+        -->
+        <img src="assets/logo-bzn.png" alt="Instituto BZN" class="brand-logo"
+             onerror="this.style.display='none';var f=document.getElementById('brand-fallback');if(f)f.style.display='inline-flex';" />
+        <span id="brand-fallback" class="brand-fallback">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Instituto <span class="grad-text">BZN</span></span>
+        </span>
       </a>
       <nav class="main-nav" aria-label="Navegação principal">
-        <a href="#solucao">O método</a>
-        <a href="#aprender">Conteúdo</a>
+        <a href="#solucao">O curso</a>
+        <a href="#conteudo-curso">Programa</a>
         <a href="#professor">Professor</a>
         <a href="#faq">Dúvidas</a>
       </nav>
-      <a href="#oferta" class="btn btn-primary btn-sm">Quero começar</a>
+      <a href="#oferta" class="btn btn-primary btn-sm">Garantir vaga</a>
     </div>
   </header>
 
@@ -84,36 +101,32 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Novo · Turma 2026</span>
+          <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Curso Híbrido · 05 e 06 de agosto de 2026</span>
           <h1 id="hero-title">
-            Comece a gerar sua <span class="grad-text">primeira renda online</span> — mesmo começando do zero.
+            As novas formas de <span class="grad-text">gerar renda pela internet</span> — em 2 noites, sem ilusões.
           </h1>
           <p class="hero-sub">
-            Um caminho claro, passo a passo, para pessoas comuns transformarem algumas horas por semana
-            em uma nova fonte de renda pela internet. Sem promessas mágicas. Sem enrolação. Só direção.
+            No curso <strong>Como Gerar Renda pela Internet</strong>, você conhece os modelos reais de trabalho e negócios
+            digitais — do freelancer à inteligência artificial — e descobre qual deles combina com a sua realidade.
+            Prático, atual e honesto.
           </p>
           <div class="hero-cta">
-            <a href="#oferta" class="btn btn-primary btn-lg">Quero começar agora</a>
-            <a href="#solucao" class="btn btn-ghost btn-lg">Ver como funciona</a>
+            <a href="#oferta" class="btn btn-primary btn-lg">Quero garantir minha vaga</a>
+            <a href="#conteudo-curso" class="btn btn-ghost btn-lg">Ver o programa</a>
           </div>
-          <ul class="trust-row" aria-label="Indicadores de confiança">
-            <li><strong>100%</strong> online e no seu ritmo</li>
-            <li><strong>Do zero</strong> ao primeiro resultado</li>
-            <li><strong>Acesso</strong> por qualquer dispositivo</li>
+          <ul class="trust-row" aria-label="Informações do curso">
+            <li><strong>05 e 06/08</strong> duas noites, das 19h às 22h</li>
+            <li><strong>6 horas</strong> de carga horária</li>
+            <li><strong>Híbrido</strong> presencial + online ao vivo</li>
           </ul>
         </div>
 
         <div class="hero-media reveal">
           <div class="photo-frame">
-            <!--
-              FOTO DO PROFESSOR
-              Salve a foto profissional em: assets/professor.jpg
-              (recomendado: retrato vertical, fundo escuro, ~1040x1600px)
-              O tratamento premium (sombra, glow e borda translúcida) é aplicado via CSS.
-            -->
+            <!-- FOTO DO PROFESSOR — assets/professor.jpg.jpg -->
             <img
               src="assets/professor.jpg.jpg"
-              alt="Tiago Cavalcante, professor do Método Renda Digital"
+              alt="Tiago Cavalcante, professor do curso Como Gerar Renda pela Internet"
               class="professor-photo"
               width="520" height="640"
               loading="eager"
@@ -130,17 +143,15 @@
       <div class="scroll-hint" aria-hidden="true"><span></span></div>
     </section>
 
-    <!-- ============================= LOGOS / PROVA ============================= -->
-    <section class="marquee-band" aria-label="Sobre o que você vai dominar">
+    <!-- ============================= BARRA DE DETALHES DO EVENTO ============================= -->
+    <section class="event-band" aria-label="Detalhes do curso">
       <div class="container">
-        <p class="band-label">Um método pensado para o mundo real dos negócios digitais</p>
-        <ul class="pill-row">
-          <li>Renda extra</li>
-          <li>Trabalho remoto</li>
-          <li>Marketing digital</li>
-          <li>Produtos online</li>
-          <li>Liberdade de horário</li>
-          <li>Primeiros clientes</li>
+        <ul class="event-bar glass">
+          <li class="event-item"><span class="ev-ic" aria-hidden="true">📅</span><div><strong>05 e 06 de agosto</strong><small>de 2026</small></div></li>
+          <li class="event-item"><span class="ev-ic" aria-hidden="true">🕗</span><div><strong>19h às 22h</strong><small>nas duas noites</small></div></li>
+          <li class="event-item"><span class="ev-ic" aria-hidden="true">⏱️</span><div><strong>6 horas</strong><small>de carga horária</small></div></li>
+          <li class="event-item"><span class="ev-ic" aria-hidden="true">🎓</span><div><strong>Híbrido</strong><small>1 noite presencial + 1 online</small></div></li>
+          <li class="event-item"><span class="ev-ic" aria-hidden="true">📜</span><div><strong>Certificado</strong><small>de participação</small></div></li>
         </ul>
       </div>
     </section>
@@ -149,43 +160,44 @@
     <section class="section" id="dor" aria-labelledby="dor-title">
       <div class="container">
         <div class="section-head reveal">
-          <span class="kicker">A realidade de quem tenta sozinho</span>
-          <h2 id="dor-title">Não falta esforço. Falta um <span class="grad-text">caminho claro</span>.</h2>
+          <span class="kicker">Por que tanta gente não sai do lugar</span>
+          <h2 id="dor-title">Oportunidade não falta. Falta <span class="grad-text">clareza</span>.</h2>
           <p class="section-lead">
-            Talvez você já tenha tentado. Assistiu a dezenas de vídeos, salvou prints, comprou promessas
-            de “dinheiro fácil” — e continuou no mesmo lugar. O problema quase nunca é você. É a falta de um método.
+            A internet criou dezenas de formas de gerar renda — e é justamente esse excesso de possibilidades
+            que gera confusão. Muita gente assiste a vídeos, segue influenciadores e testa ideias soltas,
+            mas nunca entende qual modelo faz sentido para a própria realidade.
           </p>
         </div>
         <div class="grid grid-3">
           <article class="card pain-card reveal">
-            <div class="card-ic" aria-hidden="true">⏳</div>
-            <h3>Tempo perdido</h3>
-            <p>Meses tentando “um pouco de cada coisa” e nada realmente decola, porque falta uma sequência lógica.</p>
+            <div class="card-ic" aria-hidden="true">🌀</div>
+            <h3>Informação demais</h3>
+            <p>Gurus dizendo coisas opostas. No fim, a paralisia vence e você não sabe por onde começar.</p>
           </article>
           <article class="card pain-card reveal">
             <div class="card-ic" aria-hidden="true">🧭</div>
             <h3>Falta de direção</h3>
-            <p>Informação demais, clareza de menos. Você não sabe qual é o próximo passo certo a dar hoje.</p>
-          </article>
-          <article class="card pain-card reveal">
-            <div class="card-ic" aria-hidden="true">🌀</div>
-            <h3>Excesso de informação</h3>
-            <p>Gurus dizendo coisas opostas. No fim, a paralisia vence e você desiste antes do primeiro resultado.</p>
-          </article>
-          <article class="card pain-card reveal">
-            <div class="card-ic" aria-hidden="true">😮‍💨</div>
-            <h3>Frustração</h3>
-            <p>A sensação de que “isso funciona pros outros, menos pra mim” — quando na verdade faltou o mapa.</p>
+            <p>Você conhece várias “oportunidades”, mas não sabe qual combina com o seu perfil e recursos.</p>
           </article>
           <article class="card pain-card reveal">
             <div class="card-ic" aria-hidden="true">💸</div>
-            <h3>Promessas vazias</h3>
-            <p>Você já foi enganado por atalhos milagrosos. Cansou. Agora quer algo sério e sustentável.</p>
+            <h3>Promessas exageradas</h3>
+            <p>Um mercado cheio de atalhos ilusórios que vendem a internet como máquina automática de dinheiro. Não é.</p>
           </article>
           <article class="card pain-card reveal">
-            <div class="card-ic" aria-hidden="true">🔒</div>
-            <h3>Medo de começar</h3>
-            <p>“Será que é pra mim?” O medo de errar trava o primeiro passo — o único que realmente importa.</p>
+            <div class="card-ic" aria-hidden="true">⏳</div>
+            <h3>Tempo perdido</h3>
+            <p>Meses testando “um pouco de cada coisa”, começando vários projetos e não concluindo nenhum.</p>
+          </article>
+          <article class="card pain-card reveal">
+            <div class="card-ic" aria-hidden="true">🎯</div>
+            <h3>Ideia sem oferta</h3>
+            <p>Falta transformar a vontade de “ganhar dinheiro online” em algo concreto: o que vender e para quem.</p>
+          </article>
+          <article class="card pain-card reveal">
+            <div class="card-ic" aria-hidden="true">🤖</div>
+            <h3>Tecnologia mal aproveitada</h3>
+            <p>A inteligência artificial está aí, mas poucos sabem usá-la de fato para produzir valor e renda.</p>
           </article>
         </div>
       </div>
@@ -195,128 +207,122 @@
     <section class="section section-alt" id="solucao" aria-labelledby="sol-title">
       <div class="container sol-grid">
         <div class="reveal">
-          <span class="kicker">A virada de chave</span>
-          <h2 id="sol-title">O <span class="grad-text">Método Renda Digital</span> organiza tudo em um só caminho.</h2>
+          <span class="kicker">A proposta do curso</span>
+          <h2 id="sol-title">Um panorama <span class="grad-text">real e prático</span> das formas de gerar renda online.</h2>
           <p class="section-lead">
-            Em vez de juntar pedaços soltos de conteúdo gratuito, você segue uma trilha desenhada para
-            iniciantes: do entendimento do jogo até colocar sua primeira oferta no ar e conquistar o primeiro resultado.
+            Em duas noites, você conhece os principais modelos de trabalho e negócios digitais, entende como cada um
+            funciona, quais competências exigem e por onde dá para começar com poucos recursos — para então escolher
+            o caminho compatível com a sua realidade.
           </p>
           <ul class="check-list">
-            <li>Passos na ordem certa — você sempre sabe o que fazer a seguir.</li>
-            <li>Linguagem simples, sem jargão. Feito para quem começa do zero.</li>
-            <li>Foco no que gera resultado real, cortando o que é distração.</li>
-            <li>Ético do início ao fim: nada de atalhos milagrosos.</li>
+            <li>Visão estruturada dos modelos que realmente funcionam hoje.</li>
+            <li>Critérios para escolher o que combina com seus conhecimentos e recursos.</li>
+            <li>Da oportunidade à primeira oferta: o que vender, para quem e como.</li>
+            <li>Uso da inteligência artificial como ferramenta de produtividade.</li>
+            <li>Sem promessas de enriquecimento rápido — só estratégia e execução.</li>
           </ul>
-          <a href="#aprender" class="btn btn-primary">Ver o conteúdo completo</a>
+          <a href="#conteudo-curso" class="btn btn-primary">Ver o programa das 2 noites</a>
         </div>
         <div class="sol-visual reveal" aria-hidden="true">
           <div class="glass sol-panel">
-            <div class="sol-line"><span class="sol-step">01</span> Entenda o jogo digital</div>
-            <div class="sol-line"><span class="sol-step">02</span> Escolha seu caminho</div>
-            <div class="sol-line"><span class="sol-step">03</span> Construa sua base</div>
-            <div class="sol-line"><span class="sol-step">04</span> Coloque a oferta no ar</div>
-            <div class="sol-line"><span class="sol-step">05</span> Primeiro resultado</div>
+            <div class="sol-line"><span class="sol-step">N1</span> Modelos de renda digital</div>
+            <div class="sol-line"><span class="sol-step">N1</span> Freelancer, produtos e IA</div>
+            <div class="sol-line"><span class="sol-step">N2</span> Da ideia à oferta</div>
+            <div class="sol-line"><span class="sol-step">N2</span> Primeiros clientes</div>
+            <div class="sol-line"><span class="sol-step">✓</span> Seu modelo definido</div>
             <div class="sol-glow"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================= BENEFÍCIOS ============================= -->
-    <section class="section" id="beneficios" aria-labelledby="ben-title">
+    <!-- ============================= PROGRAMA (2 NOITES) ============================= -->
+    <section class="section" id="conteudo-curso" aria-labelledby="prog-title">
       <div class="container">
         <div class="section-head reveal">
-          <span class="kicker">O que muda pra você</span>
-          <h2 id="ben-title">Benefícios reais, não promessas</h2>
+          <span class="kicker">O programa</span>
+          <h2 id="prog-title">Duas noites, um <span class="grad-text">caminho completo</span></h2>
+          <p class="section-lead">Da visão geral das oportunidades até a definição do seu primeiro modelo de renda.</p>
+        </div>
+
+        <div class="grid grid-2 nights">
+          <!-- NOITE 1 -->
+          <article class="card night-card reveal">
+            <span class="night-tag night-tag--live">Noite 1 · Presencial · 05/08</span>
+            <h3>As novas formas de ganhar dinheiro no mundo digital</h3>
+            <p>Você entende como a internet transformou o mercado de trabalho e conhece os principais modelos de renda, suas vantagens, limitações e níveis de complexidade.</p>
+            <ul class="mini-list">
+              <li>Trabalho remoto e prestação de serviços como freelancer</li>
+              <li>Produtos digitais: cursos, mentorias, comunidades e templates</li>
+              <li>Livros e e-books publicados na Amazon</li>
+              <li>Canais de conteúdo — inclusive os “dark”, sem aparecer</li>
+              <li>Marketing de afiliados em marketplaces e plataformas</li>
+              <li>Inteligência artificial como ferramenta e como profissão</li>
+            </ul>
+          </article>
+
+          <!-- NOITE 2 -->
+          <article class="card night-card reveal">
+            <span class="night-tag night-tag--online">Noite 2 · Online ao vivo · 06/08</span>
+            <h3>Da oportunidade à primeira fonte de renda</h3>
+            <p>O foco passa a ser transformar uma possibilidade em algo economicamente viável: sair da ideia genérica e estruturar uma proposta concreta.</p>
+            <ul class="mini-list">
+              <li>Definir o que vender, para quem e qual problema resolver</li>
+              <li>Identificar competências monetizáveis e nichos com demanda</li>
+              <li>Construir uma oferta simples e validar antes de investir</li>
+              <li>Precificar, montar portfólio e prospectar os primeiros clientes</li>
+              <li>Evitar os erros mais comuns de quem está começando</li>
+              <li>Usar a IA para produzir mais em menos tempo</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="prog-outcome reveal">
+          Ao final, cada participante sai com uma <strong>definição inicial do seu modelo de renda digital</strong>,
+          considerando suas habilidades, disponibilidade, recursos e forma de entrada no mercado.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================= BENEFÍCIOS ============================= -->
+    <section class="section section-alt" id="beneficios" aria-labelledby="ben-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">O que você leva do curso</span>
+          <h2 id="ben-title">Resultados reais, não promessas</h2>
         </div>
         <div class="grid grid-3">
           <article class="card benefit reveal">
             <div class="card-ic grad-ic" aria-hidden="true">🎯</div>
-            <h3>Clareza total</h3>
-            <p>Um plano passo a passo para nunca mais ficar perdido sobre o que fazer agora.</p>
-          </article>
-          <article class="card benefit reveal">
-            <div class="card-ic grad-ic" aria-hidden="true">🕒</div>
-            <h3>No seu ritmo</h3>
-            <p>Estude quando e onde puder. Poucas horas por semana já movem o ponteiro.</p>
-          </article>
-          <article class="card benefit reveal">
-            <div class="card-ic grad-ic" aria-hidden="true">🚀</div>
-            <h3>Começo sem travas</h3>
-            <p>Você sai da teoria e coloca algo real no ar já nas primeiras semanas.</p>
+            <h3>Clareza sobre as opções</h3>
+            <p>Entenda de verdade como cada modelo digital funciona e pare de se perder em informação solta.</p>
           </article>
           <article class="card benefit reveal">
             <div class="card-ic grad-ic" aria-hidden="true">🧩</div>
-            <h3>Simplicidade</h3>
-            <p>Conceitos complexos explicados de forma que qualquer iniciante entende.</p>
+            <h3>O caminho certo pra você</h3>
+            <p>Descubra qual modelo combina com seus conhecimentos, recursos e rotina — sem copiar fórmulas alheias.</p>
           </article>
           <article class="card benefit reveal">
-            <div class="card-ic grad-ic" aria-hidden="true">🛡️</div>
-            <h3>Base sólida</h3>
-            <p>Fundamentos que servem pra qualquer modelo — não uma moda passageira.</p>
+            <div class="card-ic grad-ic" aria-hidden="true">🚀</div>
+            <h3>Do primeiro passo</h3>
+            <p>Saia da teoria com uma definição concreta do que fazer a seguir para colocar sua oferta no ar.</p>
           </article>
           <article class="card benefit reveal">
-            <div class="card-ic grad-ic" aria-hidden="true">🤝</div>
-            <h3>Confiança</h3>
-            <p>Um método honesto, que respeita você e o seu tempo do início ao fim.</p>
+            <div class="card-ic grad-ic" aria-hidden="true">🤖</div>
+            <h3>IA como aliada</h3>
+            <p>Aprenda a usar inteligência artificial para pesquisar, criar, automatizar e produzir mais e melhor.</p>
+          </article>
+          <article class="card benefit reveal">
+            <div class="card-ic grad-ic" aria-hidden="true">⚖️</div>
+            <h3>Realismo, não ilusão</h3>
+            <p>Nada de “dinheiro fácil”. Estratégias honestas e sustentáveis para construir renda de verdade.</p>
+          </article>
+          <article class="card benefit reveal">
+            <div class="card-ic grad-ic" aria-hidden="true">📜</div>
+            <h3>Certificado + experiência</h3>
+            <p>6 horas de carga horária, certificado de participação e a energia da noite presencial ao vivo.</p>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- ============================= O QUE VAI APRENDER (TIMELINE / MÓDULOS) ============================= -->
-    <section class="section section-alt" id="aprender" aria-labelledby="apr-title">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="kicker">Conteúdo do curso</span>
-          <h2 id="apr-title">O que você vai <span class="grad-text">aprender</span></h2>
-          <p class="section-lead">Seis módulos em sequência lógica. Cada um te aproxima do primeiro resultado.</p>
-        </div>
-
-        <ol class="timeline">
-          <li class="tl-item reveal">
-            <span class="tl-num">01</span>
-            <div class="tl-body glass">
-              <h3>Fundamentos do digital</h3>
-              <p>Como a internet realmente gera renda hoje — de forma simples e sem ilusões. O mapa do território.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <span class="tl-num">02</span>
-            <div class="tl-body glass">
-              <h3>Escolhendo seu caminho</h3>
-              <p>Os principais modelos para iniciantes e como escolher o que combina com o seu perfil e sua rotina.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <span class="tl-num">03</span>
-            <div class="tl-body glass">
-              <h3>Construindo sua base</h3>
-              <p>Presença digital, ferramentas essenciais e organização. Tudo enxuto, nada de complicação.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <span class="tl-num">04</span>
-            <div class="tl-body glass">
-              <h3>Sua primeira oferta</h3>
-              <p>Como estruturar algo de valor e apresentá-lo com clareza para as pessoas certas.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <span class="tl-num">05</span>
-            <div class="tl-body glass">
-              <h3>Atraindo as primeiras pessoas</h3>
-              <p>Fundamentos de divulgação orgânica para conquistar atenção sem depender de grandes investimentos.</p>
-            </div>
-          </li>
-          <li class="tl-item reveal">
-            <span class="tl-num">06</span>
-            <div class="tl-body glass">
-              <h3>Do primeiro resultado à consistência</h3>
-              <p>Como transformar o primeiro resultado em um processo repetível e sustentável ao longo do tempo.</p>
-            </div>
-          </li>
-        </ol>
       </div>
     </section>
 
@@ -331,21 +337,21 @@
           <article class="card fit-card is-yes reveal">
             <h3><span class="fit-ic" aria-hidden="true">✓</span> É para você se…</h3>
             <ul class="fit-list">
-              <li>Está começando do zero e quer um caminho claro.</li>
-              <li>Topa dedicar algumas horas por semana com consistência.</li>
-              <li>Quer construir algo sério, e não um esquema de enriquecimento rápido.</li>
-              <li>Está disposto a aprender e colocar em prática.</li>
-              <li>Busca uma renda extra que possa crescer com o tempo.</li>
+              <li>Quer aumentar a renda ou buscar alternativas ao emprego tradicional.</li>
+              <li>Deseja trabalhar remotamente ou prestar serviços pela internet.</li>
+              <li>Quer transformar conhecimentos e habilidades em produtos ou serviços.</li>
+              <li>Tem interesse em explorar as possibilidades da inteligência artificial.</li>
+              <li>Percebe as mudanças no mercado e quer começar de forma estruturada.</li>
             </ul>
           </article>
           <article class="card fit-card is-no reveal">
             <h3><span class="fit-ic" aria-hidden="true">✕</span> Não é para você se…</h3>
             <ul class="fit-list">
-              <li>Procura ganhar dinheiro sem nenhum esforço.</li>
-              <li>Espera resultado garantido da noite para o dia.</li>
-              <li>Não pretende aplicar o que vai aprender.</li>
-              <li>Busca “fórmulas mágicas” e atalhos duvidosos.</li>
-              <li>Não tem paciência para construir uma base sólida.</li>
+              <li>Procura enriquecimento rápido ou “dinheiro fácil” sem esforço.</li>
+              <li>Espera uma fórmula mágica que funcione sozinha, sem execução.</li>
+              <li>Não pretende aplicar nada do que vai aprender.</li>
+              <li>Acredita que a internet paga sem que você entregue valor a alguém.</li>
+              <li>Não tem paciência para construir algo consistente ao longo do tempo.</li>
             </ul>
           </article>
         </div>
@@ -357,7 +363,6 @@
       <div class="container prof-grid">
         <div class="prof-media reveal">
           <div class="photo-frame photo-frame--sm">
-            <!-- Reaproveita a mesma foto: assets/professor.jpg -->
             <img
               src="assets/professor.jpg.jpg"
               alt="Retrato de Tiago Cavalcante"
@@ -373,20 +378,21 @@
           <span class="kicker">Quem vai te guiar</span>
           <h2 id="prof-title">Tiago Cavalcante</h2>
           <p>
-            Tiago é apaixonado por descomplicar o mundo digital. Depois de anos aprendendo na prática o que
-            funciona — e o que só faz perder tempo —, ele criou o Método Renda Digital para entregar às pessoas
-            comuns o mapa que gostaria de ter recebido no começo.
+            Tiago é apaixonado por descomplicar o mundo digital. Ele acompanha de perto a economia digital, o
+            comportamento do consumidor, a inteligência artificial e os modelos contemporâneos de trabalho —
+            e traduz tudo isso em linguagem prática, para pessoas reais.
           </p>
           <p>
-            Sua missão é simples: mostrar que gerar renda pela internet não é sorte nem talento especial,
-            e sim seguir os passos certos, na ordem certa, com consistência e ética.
+            Sua missão neste curso é simples: mostrar, sem ilusões, como o trabalho, o empreendedorismo e a
+            tecnologia estão mudando — e como usar essas transformações para construir novas possibilidades
+            profissionais e financeiras.
           </p>
           <ul class="prof-stats">
-            <li><strong data-count="6">0</strong><span>módulos estruturados</span></li>
-            <li><strong data-count="100">0</strong><span>% no seu ritmo</span></li>
-            <li><strong data-count="1">0</strong><span>método passo a passo</span></li>
+            <li><strong data-count="2">0</strong><span>noites de imersão</span></li>
+            <li><strong data-count="6">0</strong><span>horas de conteúdo</span></li>
+            <li><strong data-count="1">0</strong><span>certificado ao final</span></li>
           </ul>
-          <a href="#oferta" class="btn btn-primary">Aprender com o Tiago</a>
+          <a href="#oferta" class="btn btn-primary">Quero aprender com o Tiago</a>
         </div>
       </div>
     </section>
@@ -395,14 +401,14 @@
     <section class="section" id="diferenciais" aria-labelledby="dif-title">
       <div class="container">
         <div class="section-head reveal">
-          <span class="kicker">Por que este método</span>
-          <h2 id="dif-title">O que torna o método <span class="grad-text">diferente</span></h2>
+          <span class="kicker">Por que este curso</span>
+          <h2 id="dif-title">O que torna o curso <span class="grad-text">diferente</span></h2>
         </div>
         <div class="grid grid-4">
-          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">🧠</div><h3>Feito para iniciantes</h3><p>Do absoluto zero, sem pressupor conhecimento técnico.</p></article>
-          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">📶</div><h3>Sequência lógica</h3><p>Um passo puxa o outro. Nada de conteúdo solto.</p></article>
-          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">⚖️</div><h3>100% ético</h3><p>Sem promessas irreais nem gatilhos manipulativos.</p></article>
-          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">♻️</div><h3>Atualizado</h3><p>Fundamentos que continuam valendo mesmo com mudanças.</p></article>
+          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">🗺️</div><h3>Panorama completo</h3><p>Vários modelos de renda em um só lugar, com prós e contras de cada um.</p></article>
+          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">⚖️</div><h3>100% realista</h3><p>Sem promessas irreais. Foco em valor, execução e sustentabilidade.</p></article>
+          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">🤖</div><h3>Atual com IA</h3><p>Conteúdo alinhado às ferramentas e profissões que estão surgindo agora.</p></article>
+          <article class="card diff reveal"><div class="card-ic grad-ic" aria-hidden="true">🎓</div><h3>Formato híbrido</h3><p>A experiência presencial ao vivo somada à praticidade do online.</p></article>
         </div>
       </div>
     </section>
@@ -413,26 +419,26 @@
         <div class="section-head reveal">
           <span class="kicker">A transformação</span>
           <h2 id="res-title">De onde você sai — e <span class="grad-text">para onde vai</span></h2>
-          <p class="section-lead">Não prometemos números. Prometemos direção. O resultado é fruto da sua dedicação seguindo o método.</p>
+          <p class="section-lead">Não prometemos números. Prometemos clareza e direção. O resultado depende da sua execução.</p>
         </div>
         <div class="ba-grid">
           <div class="card ba-col ba-before reveal">
             <h3>Antes</h3>
             <ul>
-              <li>Perdido em meio a informação demais</li>
-              <li>Tentando um pouco de cada coisa</li>
-              <li>Sem saber o próximo passo</li>
-              <li>Desanimado por promessas furadas</li>
+              <li>Perdido em meio a oportunidades demais</li>
+              <li>Testando ideias soltas, sem foco</li>
+              <li>Sem saber o que vender nem para quem</li>
+              <li>Descrente por causa de promessas furadas</li>
             </ul>
           </div>
           <div class="ba-arrow" aria-hidden="true">→</div>
           <div class="card ba-col ba-after reveal">
             <h3>Depois</h3>
             <ul>
-              <li>Um plano claro e passos definidos</li>
-              <li>Foco em um caminho de cada vez</li>
-              <li>Confiança para agir toda semana</li>
-              <li>Primeiro resultado como ponto de partida</li>
+              <li>Visão clara dos modelos que existem</li>
+              <li>Um caminho escolhido com critério</li>
+              <li>Uma oferta inicial definida</li>
+              <li>Passos concretos e realistas para agir</li>
             </ul>
           </div>
         </div>
@@ -446,35 +452,35 @@
           <span class="kicker">O que dizem</span>
           <h2 id="dep-title">Depoimentos</h2>
           <!--
-            ⚠️ EDITAR: Substitua os depoimentos abaixo por depoimentos REAIS de alunos.
-            Não use depoimentos fictícios em produção — além de antiético, pode infringir a lei.
-            Enquanto não houver depoimentos reais, considere ocultar esta seção (display:none).
+            ⚠️ EDITAR: Substitua por depoimentos REAIS de participantes.
+            Não use depoimentos fictícios em produção. Enquanto não houver reais,
+            considere ocultar esta seção (display:none).
           -->
-          <p class="section-lead placeholder-note">Espaço reservado para depoimentos reais de alunos.</p>
+          <p class="section-lead placeholder-note">Espaço reservado para depoimentos reais de participantes.</p>
         </div>
         <div class="grid grid-3">
           <article class="card testimonial reveal">
             <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
-            <p>“Espaço reservado para o depoimento real do aluno. Conte aqui, com as palavras da própria pessoa, o que mudou depois do método.”</p>
+            <p>“Espaço reservado para o depoimento real do participante. Conte, com as palavras da própria pessoa, o que mudou depois do curso.”</p>
             <div class="tt-person">
               <span class="tt-avatar" aria-hidden="true">A</span>
-              <span class="tt-info"><strong>Nome do Aluno</strong><small>Profissão · Cidade</small></span>
+              <span class="tt-info"><strong>Nome do Participante</strong><small>Profissão · Cidade</small></span>
             </div>
           </article>
           <article class="card testimonial reveal">
             <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
-            <p>“Espaço reservado para o depoimento real do aluno. Prefira depoimentos específicos, com contexto e resultado honesto.”</p>
+            <p>“Espaço reservado para o depoimento real do participante. Prefira relatos específicos, com contexto e resultado honesto.”</p>
             <div class="tt-person">
               <span class="tt-avatar" aria-hidden="true">B</span>
-              <span class="tt-info"><strong>Nome do Aluno</strong><small>Profissão · Cidade</small></span>
+              <span class="tt-info"><strong>Nome do Participante</strong><small>Profissão · Cidade</small></span>
             </div>
           </article>
           <article class="card testimonial reveal">
             <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
-            <p>“Espaço reservado para o depoimento real do aluno. Sempre que possível, peça autorização e uma foto real.”</p>
+            <p>“Espaço reservado para o depoimento real do participante. Sempre que possível, peça autorização e uma foto real.”</p>
             <div class="tt-person">
               <span class="tt-avatar" aria-hidden="true">C</span>
-              <span class="tt-info"><strong>Nome do Aluno</strong><small>Profissão · Cidade</small></span>
+              <span class="tt-info"><strong>Nome do Participante</strong><small>Profissão · Cidade</small></span>
             </div>
           </article>
         </div>
@@ -485,28 +491,29 @@
     <section class="section section-alt" id="oferta" aria-labelledby="of-title">
       <div class="container">
         <div class="section-head reveal">
-          <span class="kicker">A oferta</span>
-          <h2 id="of-title">Tudo que está <span class="grad-text">incluso</span></h2>
+          <span class="kicker">Sua vaga</span>
+          <h2 id="of-title">Garanta sua participação nas <span class="grad-text">duas noites</span></h2>
         </div>
         <div class="offer-wrap glass reveal">
           <div class="offer-content">
-            <h3>Método Renda Digital · Acesso Completo</h3>
+            <h3>Como Gerar Renda pela Internet · Curso Híbrido</h3>
             <ul class="offer-list">
-              <li><span aria-hidden="true">✓</span> 6 módulos passo a passo, do zero ao primeiro resultado</li>
-              <li><span aria-hidden="true">✓</span> Acesso imediato após a inscrição</li>
-              <li><span aria-hidden="true">✓</span> Atualizações do conteúdo incluídas</li>
-              <li><span aria-hidden="true">✓</span> Materiais de apoio para colocar em prática</li>
-              <li><span aria-hidden="true">✓</span> Assista quando e onde quiser, em qualquer dispositivo</li>
-              <li><span aria-hidden="true">✓</span> Certificado de conclusão</li>
+              <li><span aria-hidden="true">✓</span> 2 noites ao vivo — 05/08 (presencial) e 06/08 (online)</li>
+              <li><span aria-hidden="true">✓</span> 6 horas de carga horária, das 19h às 22h</li>
+              <li><span aria-hidden="true">✓</span> Panorama dos principais modelos de renda digital</li>
+              <li><span aria-hidden="true">✓</span> Orientação para definir o seu próprio modelo</li>
+              <li><span aria-hidden="true">✓</span> Uso prático de inteligência artificial</li>
+              <li><span aria-hidden="true">✓</span> Certificado de participação</li>
             </ul>
           </div>
           <div class="offer-price">
-            <!-- ⚠️ EDITAR: preço, condições e link de checkout -->
-            <span class="price-from">de <s>R$ XXX</s> por</span>
-            <span class="price-now"><small>12x de</small> R$ XX<small>,XX</small></span>
-            <span class="price-cash">ou R$ XXX à vista</span>
+            <span class="offer-flag">Oferta de lançamento</span>
+            <span class="price-from">de <s>R$ 197,00</s> por</span>
+            <span class="price-now">R$ 97<small>,00</small></span>
+            <span class="price-cash">ou em até <strong>10x de R$ 9,70</strong></span>
+            <!-- ⚠️ EDITAR: inserir o link real de checkout no href abaixo -->
             <a href="#" class="btn btn-primary btn-lg btn-block" data-checkout>Garantir minha vaga</a>
-            <p class="price-safe">🔒 Ambiente de pagamento seguro</p>
+            <p class="price-safe">🔒 Ambiente de pagamento seguro · Vagas limitadas</p>
           </div>
         </div>
       </div>
@@ -518,15 +525,12 @@
         <div class="guarantee glass reveal">
           <div class="guarantee-seal" aria-hidden="true">✓</div>
           <div>
-            <h2 id="gar-title">Nosso compromisso com a sua confiança</h2>
-            <!--
-              ⚠️ EDITAR: Se houver garantia (ex.: 7 dias), descreva as condições aqui.
-              Caso não haja, mantenha o texto de compromisso com qualidade abaixo.
-            -->
+            <h2 id="gar-title">Nosso compromisso com você</h2>
+            <!-- ⚠️ EDITAR: se houver política de reembolso, descreva as condições aqui. -->
             <p>
-              Levamos a sério a qualidade do que ensinamos. O método foi construído com cuidado, linguagem clara
-              e passos aplicáveis à vida real. Nosso compromisso é te entregar direção honesta e um caminho no qual
-              você possa confiar. Sem promessas irreais — apenas conteúdo sério para quem está disposto a agir.
+              Levamos a sério a qualidade do que ensinamos. Este curso foi construído para entregar um panorama
+              honesto e prático das reais possibilidades de renda no mundo digital — sem atalhos ilusórios.
+              Nosso compromisso é te dar clareza e direção para começar de forma consciente e estruturada.
             </p>
           </div>
         </div>
@@ -542,28 +546,32 @@
         </div>
         <div class="accordion reveal">
           <details class="acc-item">
-            <summary>Preciso ter experiência anterior?</summary>
-            <div class="acc-body"><p>Não. O método foi desenhado para iniciantes absolutos. Começamos do zero, com linguagem simples e sem exigir conhecimento técnico.</p></div>
+            <summary>Preciso ter experiência ou conhecimento técnico?</summary>
+            <div class="acc-body"><p>Não. O curso é para iniciantes e para quem já tentou, mas se perdeu no excesso de informação. A linguagem é prática e acessível.</p></div>
           </details>
           <details class="acc-item">
-            <summary>Quanto tempo por semana eu preciso dedicar?</summary>
-            <div class="acc-body"><p>Poucas horas por semana já são suficientes para avançar. O importante é a consistência — o curso é feito para caber na sua rotina.</p></div>
+            <summary>Como funciona o formato híbrido?</summary>
+            <div class="acc-body"><p>São duas noites: a primeira, <strong>05/08, presencial</strong>; a segunda, <strong>06/08, online e ao vivo</strong>. Ambas das 19h às 22h, somando 6 horas de carga horária.</p></div>
           </details>
           <details class="acc-item">
-            <summary>Isso é promessa de dinheiro fácil ou rápido?</summary>
-            <div class="acc-body"><p>Não. Somos honestos: resultado exige dedicação e prática. O que oferecemos é um caminho claro e ético para você construir algo sério.</p></div>
+            <summary>Onde acontece a noite presencial?</summary>
+            <div class="acc-body"><p>O local será informado aos inscritos por e-mail e nos nossos canais oficiais. <!-- ⚠️ EDITAR: incluir endereço/local quando confirmado --></p></div>
           </details>
           <details class="acc-item">
-            <summary>Por quanto tempo tenho acesso ao conteúdo?</summary>
-            <div class="acc-body"><p>Você terá acesso conforme as condições da oferta vigente, incluindo as atualizações do conteúdo. <!-- ⚠️ EDITAR: detalhar período de acesso --></p></div>
+            <summary>Como recebo o acesso à noite online?</summary>
+            <div class="acc-body"><p>Após a inscrição, você recebe as instruções e o link de acesso da transmissão ao vivo por e-mail. <!-- ⚠️ EDITAR: detalhar plataforma da transmissão --></p></div>
           </details>
           <details class="acc-item">
-            <summary>Consigo assistir pelo celular?</summary>
-            <div class="acc-body"><p>Sim. A plataforma funciona em computador, tablet e celular. Você estuda quando e onde quiser.</p></div>
+            <summary>Isso é promessa de ganhar dinheiro rápido?</summary>
+            <div class="acc-body"><p>Não. Somos honestos: renda é resultado de valor entregue e execução consistente. O curso te dá clareza e caminhos reais — o resto depende da sua ação.</p></div>
+          </details>
+          <details class="acc-item">
+            <summary>Vou receber certificado?</summary>
+            <div class="acc-body"><p>Sim. Ao participar, você recebe um certificado de participação referente às 6 horas de carga horária.</p></div>
           </details>
           <details class="acc-item">
             <summary>Como funciona o pagamento?</summary>
-            <div class="acc-body"><p>O pagamento é feito em ambiente seguro. <!-- ⚠️ EDITAR: formas de pagamento e parcelamento --></p></div>
+            <div class="acc-body"><p>O investimento é de R$ 97,00, em até 10x de R$ 9,70, em ambiente de pagamento seguro. <!-- ⚠️ EDITAR: formas de pagamento aceitas --></p></div>
           </details>
         </div>
       </div>
@@ -573,11 +581,11 @@
     <section class="final-cta" aria-labelledby="cta-title">
       <div class="container">
         <div class="final-cta-inner reveal">
-          <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Sua próxima decisão</span>
-          <h2 id="cta-title">O melhor momento para começar é <span class="grad-text">agora</span>.</h2>
-          <p>Daqui a um ano, você vai desejar ter começado hoje. Dê o primeiro passo com um método claro ao seu lado.</p>
-          <a href="#oferta" class="btn btn-primary btn-xl">Quero começar minha jornada</a>
-          <p class="cta-fineprint">Turmas com vagas limitadas para garantir a qualidade da experiência.</p>
+          <span class="eyebrow"><span class="dot" aria-hidden="true"></span> Turma de agosto de 2026 · Vagas limitadas</span>
+          <h2 id="cta-title">O mundo digital não vai <span class="grad-text">esperar</span>.</h2>
+          <p>Em duas noites, você troca a confusão por clareza e sai com um caminho definido. O melhor momento para entender esse jogo é agora.</p>
+          <a href="#oferta" class="btn btn-primary btn-xl">Quero garantir minha vaga por R$ 97</a>
+          <p class="cta-fineprint">A noite presencial tem vagas limitadas para garantir a qualidade da experiência.</p>
         </div>
       </div>
     </section>
@@ -588,22 +596,22 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="foot-brand">
-        <span class="brand-name">Renda<span class="grad-text">Digital</span></span>
-        <p>Um método claro e ético para começar a gerar renda na internet, do zero.</p>
+        <span class="brand-name">Instituto <span class="grad-text">BZN</span></span>
+        <p>Curso híbrido “Como Gerar Renda pela Internet” — as novas formas de trabalhar, vender e criar renda no mundo digital.</p>
       </div>
       <nav class="foot-col" aria-label="Navegação do rodapé">
         <h4>Navegação</h4>
-        <a href="#solucao">O método</a>
-        <a href="#aprender">Conteúdo</a>
+        <a href="#solucao">O curso</a>
+        <a href="#conteudo-curso">Programa</a>
         <a href="#professor">Professor</a>
         <a href="#faq">Dúvidas</a>
       </nav>
       <div class="foot-col">
         <h4>Contato</h4>
-        <!-- ⚠️ EDITAR: contato e redes reais -->
+        <!-- ⚠️ EDITAR: contato e redes reais do Instituto BZN -->
         <a href="mailto:contato@exemplo.com.br">contato@exemplo.com.br</a>
         <a href="#" aria-label="Instagram">Instagram</a>
-        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="WhatsApp">WhatsApp</a>
       </div>
       <div class="foot-col">
         <h4>Legal</h4>
@@ -612,8 +620,8 @@
       </div>
     </div>
     <div class="container foot-bottom">
-      <p>© <span id="year">2026</span> Método Renda Digital · Tiago Cavalcante. Todos os direitos reservados.</p>
-      <p class="foot-disclaimer">Este material tem caráter educacional. Resultados variam conforme o esforço e a dedicação de cada pessoa. Não há garantia de ganhos.</p>
+      <p>© <span id="year">2026</span> Instituto BZN. Todos os direitos reservados.</p>
+      <p class="foot-disclaimer">Este curso tem caráter educacional. Os resultados variam conforme o esforço, os recursos e a dedicação de cada participante. Não há garantia de ganhos.</p>
     </div>
   </footer>
 
