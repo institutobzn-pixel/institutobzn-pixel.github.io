@@ -172,7 +172,7 @@ ul { list-style: none; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: 72px; }
 .brand { display: flex; align-items: center; gap: 10px; font-family: var(--font-display); font-weight: 700; font-size: 1.15rem; }
-.brand-logo { height: 40px; width: auto; display: block; }
+.brand-logo { height: 50px; width: auto; display: block; }
 .brand-fallback { display: none; align-items: center; gap: 10px; }
 .brand-mark { width: 20px; height: 20px; border-radius: 7px; background: var(--grad); box-shadow: var(--glow-purple); }
 .main-nav { display: flex; gap: 30px; }
