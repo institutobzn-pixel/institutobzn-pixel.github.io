@@ -603,3 +603,5 @@ h1, h2, h3 { text-wrap: balance; }
   .whyprice { padding: 36px 22px; }
   .whyprice-points { grid-template-columns: 1fr; }
 }
+
+.day-desc strong { color: var(--text); font-weight: 600; }
