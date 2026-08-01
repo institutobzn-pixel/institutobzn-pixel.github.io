@@ -605,3 +605,26 @@ h1, h2, h3 { text-wrap: balance; }
 }
 
 .day-desc strong { color: var(--text); font-weight: 600; }
+
+/* Destaque do livro best-seller (seção Sobre o Professor) */
+.book-highlight {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 16px;
+  padding: 20px 24px; margin: 22px 0 28px; border-radius: 16px;
+  border-color: var(--glass-brd-strong);
+}
+.book-badge {
+  flex: none; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: #061018; background: var(--grad); padding: 6px 13px; border-radius: 999px;
+}
+.book-info { flex: 1 1 260px; display: flex; flex-direction: column; gap: 4px; }
+.book-info strong { font-family: var(--font-display); font-size: 1.08rem; color: var(--text); }
+.book-info span { font-size: .86rem; color: var(--text-muted); line-height: 1.5; }
+.book-link {
+  flex: none; font-weight: 600; font-size: .92rem; color: var(--cyan);
+  white-space: nowrap; transition: opacity .25s ease;
+}
+.book-link:hover { opacity: .8; }
+
+@media (max-width: 640px) {
+  .book-highlight { flex-direction: column; align-items: flex-start; }
+}
