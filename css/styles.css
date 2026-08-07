@@ -641,6 +641,72 @@ ul { list-style: none; }
   .hyb-close { padding: 32px 24px; }
 }
 
+/* --------------------- Seção Bônus (acompanhante) --------------------- */
+.bonus-wrap {
+  position: relative; overflow: hidden;
+  max-width: 940px; margin: 0 auto;
+  padding: 52px 52px 44px; border-radius: var(--radius-lg);
+  border-color: var(--glass-brd-strong); text-align: center;
+  box-shadow: var(--shadow), 0 0 90px -44px rgba(168, 85, 247, .6);
+}
+.bonus-wrap::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(70% 120% at 50% -10%, rgba(168, 85, 247, .16), transparent 70%);
+}
+.bonus-wrap > * { position: relative; }
+.bonus-flag {
+  display: inline-block; margin-bottom: 16px;
+  padding: 7px 16px; border-radius: 999px;
+  font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .09em;
+  color: #08040f; background: var(--grad); box-shadow: var(--glow-purple);
+}
+.bonus-wrap h2 { font-size: clamp(1.9rem, 4vw, 2.7rem) !important; margin-bottom: 14px; }
+.bonus-lead { font-size: 1.14rem; color: var(--text-muted); max-width: 56ch; margin: 0 auto 30px; }
+.bonus-lead strong { color: var(--text); }
+.bonus-body { max-width: 64ch; margin: 0 auto; text-align: left; }
+.bonus-body p { color: var(--text-muted); margin-bottom: 14px; }
+.bonus-body p strong { color: var(--text); }
+
+.bonus-who {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  margin: 30px 0; text-align: left; list-style: none;
+}
+.bonus-who li { padding: 20px; border-radius: 16px; background: var(--glass-bg); border: 1px solid var(--glass-brd); }
+.bonus-who strong { display: block; font-family: var(--font-display); font-size: 1rem; margin-bottom: 6px; }
+.bonus-who span { color: var(--text-muted); font-size: .9rem; line-height: 1.5; }
+
+.bonus-math {
+  max-width: 480px; margin: 0 auto 28px;
+  padding: 20px 24px; border-radius: 16px;
+  background: var(--glass-bg); border: 1px dashed var(--glass-brd-strong);
+}
+.bonus-math-line { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; text-align: left; }
+.bonus-math-line span { color: var(--text-muted); font-size: .94rem; }
+.bonus-math-line strong { font-family: var(--font-display); font-size: 1.6rem; color: var(--text); white-space: nowrap; }
+.bonus-math-out {
+  margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--glass-brd);
+  color: var(--text-muted); font-size: .96rem;
+}
+.bonus-math-out strong { color: var(--cyan); font-family: var(--font-display); }
+
+.bonus-fine { margin-top: 18px; font-size: .88rem; color: var(--text-dim); max-width: 56ch; margin-inline: auto; }
+.bonus-fine strong { color: var(--text-muted); }
+
+/* Destaques do bônus reaproveitados na oferta e na barra do evento */
+.offer-list .offer-hi strong { color: var(--text); }
+.offer-list .offer-hi { color: var(--text); }
+.price-duo { display: block; margin-top: 4px; font-size: .92rem; color: var(--cyan); }
+.price-duo strong { color: var(--cyan); }
+.event-item--hi strong { color: var(--purple-neon); }
+
+@media (max-width: 860px) {
+  .bonus-who { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .bonus-wrap { padding: 36px 22px 32px; }
+  .bonus-math-line { flex-direction: column; gap: 4px; }
+}
+
 /* Seção "Por que R$ 97?" */
 .whyprice {
   text-align: center; padding: 52px 48px; border-radius: var(--radius-lg);
