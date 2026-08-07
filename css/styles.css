@@ -576,6 +576,71 @@ ul { list-style: none; }
 .hero-creds li:first-child { color: var(--cyan); border-color: rgba(34, 211, 238, .4); }
 .hero-creds li:hover { color: var(--text); border-color: var(--glass-brd-strong); }
 
+/* ------------------- Seção "O formato" (híbrido) ------------------- */
+.hyb-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 22px;
+}
+.hyb-card { display: flex; flex-direction: column; }
+.hyb-card h3 {
+  font-family: var(--font-display); font-size: 1.42rem; line-height: 1.2;
+  margin-bottom: 12px; letter-spacing: -.015em;
+}
+.hyb-card > p { color: var(--text-muted); margin-bottom: 16px; }
+.hyb-card > p strong { color: var(--text); }
+.hyb-why {
+  padding: 16px 18px; border-radius: 14px;
+  background: var(--glass-bg); border: 1px solid var(--glass-brd);
+  font-size: .96rem;
+}
+.hyb-why strong { color: var(--text); }
+.hyb-why em { color: var(--cyan); font-style: normal; font-weight: 600; }
+.hyb-meta {
+  margin-top: auto; padding-top: 18px;
+  font-size: .88rem; color: var(--text-dim); line-height: 1.55;
+}
+.hyb-meta strong { color: var(--text-muted); }
+
+/* Ponte "24h" entre as duas noites */
+.hyb-bridge {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  padding: 8px 0;
+}
+.hyb-bridge-line {
+  flex: 1; width: 1px;
+  background: linear-gradient(180deg, transparent, var(--glass-brd-strong), transparent);
+}
+.hyb-bridge-label {
+  flex: none; display: grid; place-items: center;
+  width: 56px; height: 56px; border-radius: 50%;
+  font-family: var(--font-display); font-weight: 700; font-size: .95rem;
+  color: var(--text); background: var(--glass-bg);
+  border: 1px solid var(--glass-brd-strong);
+  box-shadow: 0 0 34px -10px rgba(168, 85, 247, .5);
+}
+
+/* Fechamento + CTA */
+.hyb-close {
+  margin-top: 30px; padding: 40px 44px; border-radius: var(--radius-lg);
+  border-color: var(--glass-brd-strong); text-align: center;
+}
+.hyb-close-lead { font-size: 1.08rem; color: var(--text-muted); max-width: 66ch; margin: 0 auto 16px; }
+.hyb-close-lead strong { color: var(--text); }
+.hyb-close-note { color: var(--text-dim); max-width: 62ch; margin: 0 auto 28px; font-size: .96rem; }
+
+@media (max-width: 960px) {
+  .hyb-grid { grid-template-columns: 1fr; gap: 18px; }
+  .hyb-bridge { flex-direction: row; padding: 0; }
+  .hyb-bridge-line { width: auto; height: 1px; flex: 1;
+    background: linear-gradient(90deg, transparent, var(--glass-brd-strong), transparent); }
+  .hyb-meta { margin-top: 18px; }
+}
+@media (max-width: 640px) {
+  .hyb-close { padding: 32px 24px; }
+}
+
 /* Seção "Por que R$ 97?" */
 .whyprice {
   text-align: center; padding: 52px 48px; border-radius: var(--radius-lg);
