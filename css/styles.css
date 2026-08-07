@@ -621,15 +621,6 @@ ul { list-style: none; }
   box-shadow: 0 0 34px -10px rgba(168, 85, 247, .5);
 }
 
-/* Fechamento + CTA */
-.hyb-close {
-  margin-top: 30px; padding: 40px 44px; border-radius: var(--radius-lg);
-  border-color: var(--glass-brd-strong); text-align: center;
-}
-.hyb-close-lead { font-size: 1.08rem; color: var(--text-muted); max-width: 66ch; margin: 0 auto 16px; }
-.hyb-close-lead strong { color: var(--text); }
-.hyb-close-note { color: var(--text-dim); max-width: 62ch; margin: 0 auto 28px; font-size: .96rem; }
-
 @media (max-width: 960px) {
   .hyb-grid { grid-template-columns: 1fr; gap: 18px; }
   .hyb-bridge { flex-direction: row; padding: 0; }
@@ -637,10 +628,6 @@ ul { list-style: none; }
     background: linear-gradient(90deg, transparent, var(--glass-brd-strong), transparent); }
   .hyb-meta { margin-top: 18px; }
 }
-@media (max-width: 640px) {
-  .hyb-close { padding: 32px 24px; }
-}
-
 /* --------------------- Seção Bônus (acompanhante) --------------------- */
 .bonus-wrap {
   position: relative; overflow: hidden;
