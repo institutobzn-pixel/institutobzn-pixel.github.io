@@ -152,4 +152,25 @@
       else { rafId = requestAnimationFrame(draw); }
     });
   }
+
+  /* ------------------------------------------------------------------
+     META PIXEL — evento InitiateCheckout
+     O checkout fica em outro domínio (inscricao.institutobzn.org), então
+     o pixel desta página não consegue ver a compra. O clique no botão é
+     o último sinal que conseguimos capturar aqui — é ele que o Meta usa
+     para aprender quem tem intenção de comprar.
+     ------------------------------------------------------------------ */
+  var CHECKOUT = 'inscricao.institutobzn.org';
+  document.addEventListener('click', function (ev) {
+    var link = ev.target.closest && ev.target.closest('a[href]');
+    if (!link || link.href.indexOf(CHECKOUT) === -1) return;
+    if (typeof window.fbq !== 'function') return;
+
+    window.fbq('track', 'InitiateCheckout', {
+      content_name: 'Como Gerar Renda pela Internet',
+      content_category: 'Curso ao vivo',
+      value: 97.00,
+      currency: 'BRL'
+    });
+  });
 })();
