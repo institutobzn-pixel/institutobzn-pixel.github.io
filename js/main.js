@@ -173,4 +173,39 @@
       currency: 'BRL'
     });
   });
+
+  /* ------------------------------------------------------------------
+     REPASSE DE PARÂMETROS PARA O CHECKOUT (Guru)
+     Ao clicar num anúncio, o Meta acrescenta ?fbclid=... na URL desta
+     página. Esse identificador vira o cookie _fbc — mas cookie não
+     atravessa domínio, então o checkout do Guru não o receberia e a
+     venda ficaria sem dono na hora de atribuir o resultado ao anúncio.
+     Aqui os parâmetros de origem viajam na própria URL do checkout.
+     ------------------------------------------------------------------ */
+  var REPASSAR = ['fbclid', 'gclid', 'ttclid',
+                  'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+
+  (function repassarParametros() {
+    if (!window.URL || !window.URLSearchParams) return;
+
+    var entrada = new URLSearchParams(window.location.search);
+    var carga = [];
+    REPASSAR.forEach(function (chave) {
+      var valor = entrada.get(chave);
+      if (valor) { carga.push([chave, valor]); }
+    });
+    if (!carga.length) return;
+
+    var links = document.querySelectorAll('a[href*="' + CHECKOUT + '"]');
+    Array.prototype.forEach.call(links, function (link) {
+      var destino;
+      try { destino = new URL(link.href); } catch (e) { return; }
+      carga.forEach(function (par) {
+        if (!destino.searchParams.has(par[0])) {
+          destino.searchParams.set(par[0], par[1]);
+        }
+      });
+      link.href = destino.toString();
+    });
+  })();
 })();
