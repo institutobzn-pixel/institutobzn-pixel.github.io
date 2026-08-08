@@ -337,7 +337,6 @@ ul { list-style: none; }
 .kicker { display: inline-block; font-size: .82rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: var(--cyan); margin-bottom: 14px; }
 .section-head h2, .section h2 { font-family: var(--font-display); font-weight: 700; font-size: clamp(1.9rem, 4vw, 2.9rem); line-height: 1.12; letter-spacing: -.02em; }
 .section-lead { margin-top: 18px; color: var(--text-muted); font-size: 1.1rem; }
-.placeholder-note { color: var(--text-dim); font-style: italic; }
 
 /* Grids */
 .grid { display: grid; gap: 22px; }
