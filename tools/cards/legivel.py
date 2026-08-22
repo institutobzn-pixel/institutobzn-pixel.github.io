@@ -103,11 +103,6 @@ CABECA = """<!DOCTYPE html>
     line-height: 1.02; letter-spacing: -.025em;
     background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent;
   }}
-  .sub {{
-    margin-top: {GAP_SUB}px; font-size: {F_SUB}px; line-height: 1.28; color: #e4e7ec;
-    max-width: {SUB_W}px; letter-spacing: -.01em; font-weight: 500;
-  }}
-
   .speaker {{ margin-top: {GAP_SPK}px; }}
   .speaker .com {{ font-size: {F_COM}px; color: var(--muted); }}
   .speaker .nome {{
@@ -188,7 +183,6 @@ CABECA = """<!DOCTYPE html>
 
     <div class="col">
       <h1 class="course">Como Gerar Renda<br/>pela Internet</h1>
-      <p class="sub">Duas noites ao vivo para escolher o seu caminho.</p>
       <div class="speaker">
         <span class="com">com</span>
         <span class="nome">Dr. Tiago Cavalcanti</span>
@@ -245,10 +239,10 @@ CTA_WA = ('        <div class="wa">' + WA_SVG +
 FEED = dict(
     ATIVOS=ATIVOS, W=1080, H=1350, FOTO_W=640, FOTO_H=1160, FOTO_X=88,
     PAD='92px 74px 208px', LOGO=58, CHIP_PAD='14px 26px', SUB_W=600,
-    COL=690, COL_TOP=64,
+    COL=690, COL_TOP=104,
     F_DATA=34, F_TITULO=74, F_SUB=44, F_COM=40, F_NOME=62, F_CRED=34, F_BONUS=46, F_DIA=44,
     GAP_SUB=24, GAP_SPK=28, GAP_CRED=14, GAP_BONUS=32, GAP_DIAS=20,
-    LOC_GAP=18, LOC_TOP=26, LOC_IC=40, LOC_L1=42, LOC_L2=34,
+    LOC_GAP=16, LOC_TOP=26, LOC_IC=34, LOC_L1=36, LOC_L2=32,
     SIGN_TOP=24, GAP_FOOT=30,
     WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='',
 )
@@ -256,10 +250,10 @@ FEED = dict(
 STORY = dict(
     ATIVOS=ATIVOS, W=1080, H=1920, FOTO_W=690, FOTO_H=1300, FOTO_X=94,
     PAD='104px 76px 330px', LOGO=64, CHIP_PAD='15px 24px', SUB_W=630,
-    COL=712, COL_TOP=190,
+    COL=712, COL_TOP=240,
     F_DATA=34, F_TITULO=80, F_SUB=48, F_COM=42, F_NOME=66, F_CRED=36, F_BONUS=50, F_DIA=48,
     GAP_SUB=34, GAP_SPK=56, GAP_CRED=16, GAP_BONUS=46, GAP_DIAS=26,
-    LOC_GAP=20, LOC_TOP=38, LOC_IC=44, LOC_L1=46, LOC_L2=36,
+    LOC_GAP=18, LOC_TOP=38, LOC_IC=38, LOC_L1=40, LOC_L2=34,
     SIGN_TOP=50, GAP_FOOT=58,
     WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='',
 )
@@ -267,11 +261,11 @@ STORY = dict(
 # Com CTA: post organico, story do perfil e disparo em grupo, onde nao ha
 # botao nativo. Nao usar em anuncio pago — telefone na imagem nao e clicavel.
 FEED_WA = dict(FEED,
-    PAD='96px 74px 176px', COL_TOP=30, GAP_BONUS=26,
+    PAD='96px 74px 176px', COL_TOP=76, GAP_BONUS=26,
     WA_GAP=20, WA_IC=56, WA_L1=34, WA_L2=46, CTA=CTA_WA)
 
 STORY_WA = dict(STORY,
-    PAD='130px 76px 330px', COL_TOP=150, GAP_BONUS=40,
+    PAD='130px 76px 330px', COL_TOP=200, GAP_BONUS=40,
     WA_GAP=24, WA_IC=70, WA_L1=38, WA_L2=56, CTA=CTA_WA)
 
 PECAS = [

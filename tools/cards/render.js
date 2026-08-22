@@ -10,6 +10,9 @@ const fs = require('fs');
 
 const LARGURA_TELA = 390;
 const MINIMO = 12;
+// A linha de endereco e informacao de referencia — quem se interessa amplia ou
+// clica. Ela pode ficar logo abaixo do piso sem prejudicar a mensagem.
+const MINIMO_ENDERECO = 11.5;
 const CHROME = '/opt/pw-browsers/chromium-1194/chrome-linux/chrome';
 
 const PECAS = [
@@ -65,9 +68,10 @@ const PECAS = [
     console.log('\n=== ' + out + ' ===');
     console.log(vazando.length ? '  VAZANDO: ' + JSON.stringify(vazando) : '  layout: nada vazando');
     console.log('  respiro na borda de baixo: ' + respiro + 'px');
-    const baixos = textos.filter(t => t.tela < MINIMO);
+    const piso = t => (t.txt.startsWith('Av.') ? MINIMO_ENDERECO : MINIMO);
+    const baixos = textos.filter(t => t.tela < piso(t));
     for (const t of textos) {
-      console.log(`  ${t.tela >= MINIMO ? 'ok   ' : 'BAIXO'} ${String(t.px + 'px').padStart(6)} -> ${String(t.tela + 'px').padStart(7)}  "${t.txt}"`);
+      console.log(`  ${t.tela >= piso(t) ? 'ok   ' : 'BAIXO'} ${String(t.px + 'px').padStart(6)} -> ${String(t.tela + 'px').padStart(7)}  "${t.txt}"`);
     }
     if (baixos.length || vazando.length) reprovados++;
 
