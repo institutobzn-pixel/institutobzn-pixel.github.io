@@ -191,8 +191,7 @@ CABECA = """<!DOCTYPE html>
     </div>
 
     <div class="foot">
-      <div class="bonus"><span class="ic">🎁</span><span class="t">Leve 1 acompanhante sem custo</span></div>
-      <div class="days">
+{BONUS}      <div class="days">
         <div class="day pres"><span class="b"></span><span class="n">31/08</span><span class="o">presencial</span></div>
         <div class="day onl"><span class="b"></span><span class="n">01/09</span><span class="o">online e ao vivo</span></div>
       </div>
@@ -234,6 +233,8 @@ CTA_WA = ('        <div class="wa">' + WA_SVG +
           '<span class="l2">(51) 98986-6856</span>'
           '</span></div>\n')
 
+BONUS_ACOMPANHANTE = '      <div class="bonus"><span class="ic">🎁</span><span class="t">Leve 1 acompanhante sem custo</span></div>\n'
+
 # ------------------------------------------------------------------ pecas
 # Sem CTA: para anuncio pago, onde o botao do Meta faz esse trabalho.
 FEED = dict(
@@ -244,7 +245,7 @@ FEED = dict(
     GAP_SUB=24, GAP_SPK=28, GAP_CRED=14, GAP_BONUS=32, GAP_DIAS=20,
     LOC_GAP=16, LOC_TOP=26, LOC_IC=34, LOC_L1=36, LOC_L2=32,
     SIGN_TOP=24, GAP_FOOT=30,
-    WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='',
+    WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='', BONUS='',
 )
 
 STORY = dict(
@@ -255,7 +256,7 @@ STORY = dict(
     GAP_SUB=34, GAP_SPK=56, GAP_CRED=16, GAP_BONUS=46, GAP_DIAS=26,
     LOC_GAP=18, LOC_TOP=38, LOC_IC=38, LOC_L1=40, LOC_L2=34,
     SIGN_TOP=50, GAP_FOOT=58,
-    WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='',
+    WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='', BONUS=BONUS_ACOMPANHANTE,
 )
 
 # Com CTA: post organico, story do perfil e disparo em grupo, onde nao ha
