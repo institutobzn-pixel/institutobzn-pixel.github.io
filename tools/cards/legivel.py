@@ -256,7 +256,7 @@ STORY = dict(
     GAP_SUB=34, GAP_SPK=56, GAP_CRED=16, GAP_BONUS=46, GAP_DIAS=26,
     LOC_GAP=18, LOC_TOP=38, LOC_IC=38, LOC_L1=40, LOC_L2=34,
     SIGN_TOP=50, GAP_FOOT=58,
-    WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='', BONUS=BONUS_ACOMPANHANTE,
+    WA_GAP=0, WA_IC=1, WA_L1=1, WA_L2=1, CTA='', BONUS='',
 )
 
 # Com CTA: post organico, story do perfil e disparo em grupo, onde nao ha
